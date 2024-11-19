@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+<div class="desktop">
     <div class="header">
         <div class="capture"></div>
         <div class="buttons">
@@ -291,15 +292,16 @@
             });
         }
     </script>
+</div>  
     <div class="mobile">
         <header class="mobile-header">
             <button class="hamburger" onclick="toggleMenu()">☰</button>
             <nav class="mobile-menu" id="mobileMenu">
-                <button onclick="showMobileContent('mobileContent1')">About Site</button>
-                <button onclick="showMobileContent('mobileContent2')">Summer</button>
-                <button onclick="showMobileContent('mobileContent3')">Autumn</button>
-                <button onclick="showMobileContent('mobileContent4')">Winter</button>
-                <button onclick="showMobileContent('mobileContent5')">Spring</button>
+                <button class="header_button" onclick="showMobileContent('mobileContent1')">About Site</button>
+                <button class="header_button" onclick="showMobileContent('mobileContent2')">Summer</button>
+                <button class="header_button" onclick="showMobileContent('mobileContent3')">Autumn</button>
+                <button class="header_button" onclick="showMobileContent('mobileContent4')">Winter</button>
+                <button class="header_button" onclick="showMobileContent('mobileContent5')">Spring</button>
             </nav>
         </header>
         <main>
@@ -309,10 +311,6 @@
             <div id="mobileContent4" class="mobile-content">Winter content here.</div>
             <div id="mobileContent5" class="mobile-content">Spring content here.</div>
         </main>
-        <footer>
-            <button class="footer-button">Back</button>
-            <button class="footer-button">Next</button>
-        </footer>
     </div>
 
     <script>
